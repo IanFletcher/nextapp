@@ -1,0 +1,5 @@
+.DS_Store
+.eslintrc.js
+.next/
+node_modules/
+package-lock.json
