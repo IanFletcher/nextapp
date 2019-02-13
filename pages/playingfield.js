@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Grass from '../components/grass'
 
 const Field = styled.div`
   display: grid;
@@ -45,7 +46,12 @@ const PlayingField = (props) => {
     <div>
       <Field>
         <Header>xxx</Header>
-        <Ground>ggg</Ground>
+        <Ground>
+          <Grass numColumns={1} />
+          <Grass numColumns={5} />
+          <Grass numColumns={5} />
+          <Grass numColumns={3} />
+        </Ground>
         <Footer>foot</Footer>
         <Aside>aside</Aside>
       </Field>
