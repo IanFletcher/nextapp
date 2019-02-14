@@ -12,6 +12,12 @@ const Field = styled.div`
     "ground ground ground ground aside"
     "ground ground ground ground aside"
     "ground ground ground ground aside"
+    "ground ground ground ground aside"
+    "ground ground ground ground aside"
+    "ground ground ground ground aside"
+    "ground ground ground ground aside"
+    "ground ground ground ground aside"
+    "ground ground ground ground aside"
     "footer footer footer footer footer";
 
   background-color: red;
@@ -19,7 +25,7 @@ const Field = styled.div`
 
 const Header = styled.div`
   grid-area: header;
-  padding: 4em;
+  padding: 2em;
   background: papayawhip;
 `;
 
@@ -27,6 +33,8 @@ const Ground = styled.div`
   grid-area: ground;
   padding: 4em;
   background: blue;
+  display: grid;
+  gird_templace_columns: 1fr;
 `;
 const Footer = styled.div`
   grid-area: footer;
@@ -43,19 +51,17 @@ const Aside = styled.div`
 
 const PlayingField = (props) => {
   return (
-    <div>
-      <Field>
-        <Header>xxx</Header>
-        <Ground>
-          <Grass numColumns={1} />
-          <Grass numColumns={5} />
-          <Grass numColumns={5} />
-          <Grass numColumns={3} />
-        </Ground>
-        <Footer>foot</Footer>
-        <Aside>aside</Aside>
-      </Field>
-    </div>
+    <Field>
+      <Header>xxx</Header>
+      <Ground>
+        <Grass numColumns={1} />
+        <Grass numColumns={5} />
+        <Grass numColumns={5} />
+        <Grass numColumns={3} />
+      </Ground>
+      <Footer>foot</Footer>
+      <Aside>aside</Aside>
+    </Field>
   )
 }
 

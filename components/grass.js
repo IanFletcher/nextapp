@@ -1,17 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`
-
 const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(${props => props.numColumns}, 1fr);
   background-color: #2196F3;
   justify-items: center;
+  align-items: center;
 `
 
 const Grass = (props) => {
