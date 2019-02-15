@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const Content = styled.div`
@@ -10,19 +9,17 @@ const Content = styled.div`
 `
 
 const Grass = (props) => {
-  let numColumns = props.numColumns
+  let { numColumns } = props
   let ind = 0
-  let playerColumn = [...Array(numColumns).keys()].map(item => {
+  let playerColumn = [...Array(numColumns).keys()].map((item) => {
     return (
       <div key={item + 1}>{item + 1}</div>
     )
   })
   return (
-    <div>
-      <Content numColumns={numColumns}>
-        {playerColumn}
-      </Content>
-    </div>
+    <Content numColumns={numColumns}>
+      {playerColumn}
+    </Content>
   )
 }
 
