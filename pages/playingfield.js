@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import Grass from '../components/grass'
 
@@ -31,7 +30,7 @@ const Header = styled.div`
 
 const Ground = styled.div`
   grid-area: ground;
-  padding: 4em;
+  padding: 2em;
   background: blue;
   display: grid;
   gird_templace_columns: 1fr;
