@@ -1,0 +1,3 @@
+{
+  "watch": ["pages/*.js", "components/*.js"]
+}
